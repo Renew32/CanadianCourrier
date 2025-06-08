@@ -1,0 +1,26 @@
+/* Hero.css */
+
+/* 1) Hide the red separator under “Mail Online” */
+.hero .separator {
+  display: none;
+}
+
+/* 2) Give the hero section extra vertical padding */
+.hero {
+  padding: 4rem 0;  /* 4rem above & below Mail Online */
+}
+
+/* 3) Style the “Mail Online” heading */
+.hero .section-header {
+  font-size: 4.5rem;     /* bump up size */
+  margin: 0 0 4rem;      /* 0 top, 4rem bottom */
+  text-align: center;    /* center the text */
+}
+
+/* 4) Layout for any hero-content you have below the heading */
+.hero-content {
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start;  /* placeholder on the left */
+  align-items: center;          /* vertical centering of content */
+}

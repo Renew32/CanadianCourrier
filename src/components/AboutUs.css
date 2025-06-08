@@ -1,0 +1,48 @@
+/* AboutUs.css */
+
+/* …your existing rules… */
+
+.about-content {
+  display: flex;
+  align-items: flex-start;    /* heading stays at top of placeholder */
+  justify-content: center;    /* center the pair horizontally */
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto 4rem;
+  margin-top: 4rem;    /* ↑ push the about block further down */
+
+  
+}
+
+/* same as before */
+.about-placeholder {
+  flex: 0 0 300px;
+  height: 400px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+}
+
+/* make this a grid so we can center the P in its own row */
+.about-text-block {
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto 1fr; /* row1 = heading height, row2 = rest */
+  height: 400px;                /* match the placeholder’s height */
+}
+
+.about-heading {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* this will center the paragraph inside that second row */
+.about-text {
+  margin: 0 auto;      /* keep it centered horizontally */
+  max-width: 800px;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #333;
+
+  align-self: center;  /* <-- vertically centers it in row2 */
+}
