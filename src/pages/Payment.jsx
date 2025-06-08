@@ -28,13 +28,13 @@ export default function Payment() {
   const navigate = useNavigate();
 
   const handleCardNumberChange = (e) => {
-    // format en 4+4+4+4
+    // format en bancaire
     const digits = e.target.value.replace(/\D/g, "").slice(0, 16);
     const parts  = digits.match(/.{1,4}/g) || [];
     const formatted = parts.join(" ");
     setCardNumber(formatted);
 
-    // détection du type
+
     setCardType(detectCardType(digits));
   };
 

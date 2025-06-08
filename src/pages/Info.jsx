@@ -19,9 +19,8 @@ export default function About() {
       const DIVISEUR_VOLUMETRIQUE = 5000;
       const BASE_PRICE = 0.0;
       const PRICE_PER_KG = 2.0;
-      const SURCHARGE_EXPRESS = 7.99;   // ton Express bouton
+      const SURCHARGE_EXPRESS = 7.99;
 
-        // si un des champs est vide ou invalide → return "Please fill all fields"
 
     
       const poidsVolumetrique = (length * width * height) / DIVISEUR_VOLUMETRIQUE;
